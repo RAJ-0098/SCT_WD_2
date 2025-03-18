@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="stopwatch">
+        <div class="stopwatch-inner">
+            <h1>Stopwatch</h1>
+            <div id="display">00:00:00.00</div>
+            <div class="buttons">
+                <button id="start" class="button start">Start</button>
+                <button id="pause" class="button hidden pause">Pause</button>
+                <button id="reset" class="button hidden reset">Reset</button>
+                <button id="lap" class="button hidden lap">Lap</button>
+            </div>
+            <div id="laps-container" class="hidden">
+                <ul id="laps"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

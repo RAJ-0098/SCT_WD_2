@@ -1,0 +1,104 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: radial-gradient(circle, #17a2b8 0%, #0056b3 100%);
+    position: relative;
+    color: #fff;
+}
+
+.stopwatch {
+    width: 450px; /* Increase the width */
+    height: 450px; /* Increase the height */
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(5, 5, 5, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.stopwatch-inner {
+    text-align: center;
+    padding: 1rem;
+}
+
+.stopwatch h1 {
+    font-size: 3rem;
+    margin: 0;
+    color: #007bff;
+}
+
+#display {
+    font-size: 2rem;
+    margin: 1rem 0;
+    color: #007bff;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.button {
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border: none;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Gradient background */
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+    background: linear-gradient(135deg, #feb47b, #ff7e5f); /* Gradient background on hover */
+    transform: scale(1.05);
+}
+
+.button:active {
+    transform: scale(0.95);
+}
+
+.buttons button:disabled {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Maintain gradient background */
+    color: white;
+    opacity: 0.5; /* Slightly faded */
+    cursor: not-allowed;
+}
+
+.hidden {
+    display: none;
+}
+
+#laps-container {
+    max-height: 125px; /* Adjust this height to fit the larger circle */
+    overflow-y: auto;
+    width: 80%;
+    background: #ffdbbb;
+    padding: 0.5rem;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: none; /* Initially hidden */
+    margin:0 auto
+}
+
+#laps {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#laps li {
+    margin: 0.5rem 0;
+    background: #36454f;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
